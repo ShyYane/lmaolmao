@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script language="JavaScript">
+      function doimau() {
+        var st = document.f1.t1.value;
+        document.bgColor = st;
+      }
+
+      function doichu() {
+        var ch = document.f1.t1.value;
+        document.f1.t1.value = ch.toUpperCase();
+      }
+    </script>
+  </head>
+  <body>
+    <form name="f1" method="" action="">
+      <input  type="text" name="t1" value="" onblur="doichu()" />
+      <input type="button" name="b1" value="OK" onclick="doimau()" />
+    </form>
+  </body>
+</html>
